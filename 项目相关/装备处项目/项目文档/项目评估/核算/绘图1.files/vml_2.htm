@@ -1,0 +1,205 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" 
+ xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>绘图1</title>
+<style type="text/css">
+	 v\:* { behavior: url(#default#VML); }
+</style>
+
+<script src="vml_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+
+	var pageID = 4;
+	var viewMgr = null;
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+	function getPNZ()
+	{
+		var rawHTML = VMLDiv.innerHTML;
+		var strReturn = ""
+		
+		strReturn = rawHTML.slice( rawHTML.indexOf( '<v:group' ), rawHTML.indexOf( "</v:shape>" ) );
+		strReturn += "</v:shape></v:group>\n";
+				
+		return strReturn;
+	}
+	
+	function load()
+	{
+		viewMgr = new parent.CViewMgr("ConvertedImage", "arrowDiv");
+
+		viewMgr.put_Location = ViewMgrSetVMLLocation;
+
+
+		viewMgr.visBBoxLeft = 0.219790;
+		viewMgr.visBBoxRight = 7.678832;
+		viewMgr.visBBoxBottom = 1.573136;
+		viewMgr.visBBoxTop = 11.320564;
+
+		viewMgr.Zoom = VMLZoomChange;
+		viewMgr.setView= VMLSetView;
+
+		viewMgr.SupportsDetails = true;
+		viewMgr.SupportsSearch = true;
+
+		parent.viewMgr = viewMgr;
+
+		fit();
+	}
+
+	function unload()
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+
+	function fit()
+	{
+		if(parent.frmToolbar)
+		{
+			if (parent.g_WidgetsLoaded)
+			{
+				var zoom100 = parent.frmToolbar.document.all('a100');
+				if (zoom100)
+				{
+					parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+					zoom100.click();
+				}
+				else
+				{
+					parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+					viewMgr.Zoom(100);
+				}
+			}
+			else
+			{
+				window.setTimeout("fit()", 500);
+			}
+		}	
+		else
+		{
+			parent.viewMgr.PostZoomProcessing = PostZoomProcessing;
+			viewMgr.Zoom(100);
+		}
+	}
+
+	function PostZoomProcessing (newZoomLevel)
+	{
+		parent.viewMgr.PostZoomProcessing = null;
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.viewMgr.getPNZ = getPNZ;
+		parent.CurPageUpdate (pageIndex);
+	}
+
+
+	
+	var isUpLevel = parent.isUpLevel;
+	var OnShapeClick = parent.OnShapeClick;
+	var OnShapeKey = parent.OnShapeKey;
+	var UpdateTooltip = parent.UpdateTooltip;
+	var clickMenu = parent.clickMenu;
+	var toggleMenuDiv = parent.toggleMenuDiv;
+	var toggleMenuLink = parent.toggleMenuLink;
+	var GoToPage = parent.GoToPage;
+
+	window.onload = load;
+	window.onunload = unload;
+	document.onclick = clickMenu;
+
+
+
+
+</script>
+
+</head>
+
+<body style="MARGIN:10px" onresize="VMLOnResize();" onscroll="VMLOnScroll();">
+
+<div id="arrowdiv" style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+
+
+
+<div id="VMLDiv" >
+
+
+<v:group  id="ConvertedImage" style="width:3.060927in;height:4.000000in;position:absolute;visibility=hidden;" coordSize="1530,2000" coordOrigin="-1000,-1000" >
+
+<v:shapetype 
+  id="VISSHAPE"
+  target="_parent"
+  coordsize="1530,2000"
+  coordorigin="-1000,-1000"
+  stroked="f"
+  strokecolor="red"
+  filled="t"
+>
+<v:fill opacity="0.0"/>
+</v:shapetype>
+
+
+<v:shape style="top:-1000.0;left:-1000.0;width:1530.5;height:2000.0;position:absolute" coordSize="1530,2000" coordOrigin="-1000,-1000" >
+<v:imagedata src="vml_2.emz"/>
+</v:shape>
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="合并凭证" origTitle="合并凭证"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -338,-876 l -76,-876 l -36,-936 l -76,-996 l -338,-996 l -378,-936 l -338,-876xe" onmouseover="UpdateTooltip(this,4,22)" onclick="OnShapeClick(4,22)" onfocus="UpdateTooltip(this,4,22);" onkeyup="OnShapeKey(4,22)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="勾选凭证，判定条件：无序号，已生成凭证号，分录错误的凭证不能合并" origTitle="勾选凭证，判定条件：无序号，已生成凭证号，分录错误的凭证不能合并"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -841,-469 l -398,-469 l -398,-674 l -841,-674 l -841,-469xe" onmouseover="UpdateTooltip(this,4,23)" onclick="OnShapeClick(4,23)" onfocus="UpdateTooltip(this,4,23);" onkeyup="OnShapeKey(4,23)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="无序号：编制凭证保存后自动生成" origTitle="无序号：编制凭证保存后自动生成"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -996,-50 l -795,-50 l -795,-372 l -996,-372 l -996,-50xe" onmouseover="UpdateTooltip(this,4,24)" onclick="OnShapeClick(4,24)" onfocus="UpdateTooltip(this,4,24);" onkeyup="OnShapeKey(4,24)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="凭证号生成：打印凭证后自动生成" origTitle="凭证号生成：打印凭证后自动生成"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -750,-34 l -549,-34 l -549,-372 l -750,-372 l -750,-34xe" onmouseover="UpdateTooltip(this,4,25)" onclick="OnShapeClick(4,25)" onfocus="UpdateTooltip(this,4,25);" onkeyup="OnShapeKey(4,25)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="分录错误：凭证明细借贷不平或为空" origTitle="分录错误：凭证明细借贷不平或为空"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -539,-34 l -338,-34 l -338,-372 l -539,-372 l -539,-34xe" onmouseover="UpdateTooltip(this,4,26)" onclick="OnShapeClick(4,26)" onfocus="UpdateTooltip(this,4,26);" onkeyup="OnShapeKey(4,26)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="合并方式：借方合并，贷方合并，全部合并" origTitle="合并方式：借方合并，贷方合并，全部合并"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -308,-469 l 4,-469 l 4,-674 l -308,-674 l -308,-469xe" onmouseover="UpdateTooltip(this,4,30)" onclick="OnShapeClick(4,30)" onfocus="UpdateTooltip(this,4,30);" onkeyup="OnShapeKey(4,30)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="借方合并：借方合并为一条，贷方为合并凭证贷方所有" origTitle="借方合并：借方合并为一条，贷方为合并凭证贷方所有"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -278,-91 l -52,-91 l -52,-356 l -278,-356 l -278,-91xe" onmouseover="UpdateTooltip(this,4,31)" onclick="OnShapeClick(4,31)" onfocus="UpdateTooltip(this,4,31);" onkeyup="OnShapeKey(4,31)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="贷方合并：借方为合并凭证借方所有，贷方为一条总和" origTitle="贷方合并：借方为合并凭证借方所有，贷方为一条总和"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m 4,-91 l 229,-91 l 229,-372 l 4,-372 l 4,-91xe" onmouseover="UpdateTooltip(this,4,32)" onclick="OnShapeClick(4,32)" onfocus="UpdateTooltip(this,4,32);" onkeyup="OnShapeKey(4,32)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="全部合并：借贷各一条总和" origTitle="全部合并：借贷各一条总和"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m 264,-91 l 463,-91 l 463,-332 l 264,-332 l 264,-91xe" onmouseover="UpdateTooltip(this,4,33)" onclick="OnShapeClick(4,33)" onfocus="UpdateTooltip(this,4,33);" onkeyup="OnShapeKey(4,33)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="合并规则：勾选的凭证序号取最最小断号生成新凭证，被合并凭证状态变为不可见。" origTitle="合并规则：勾选的凭证序号取最最小断号生成新凭证，被合并凭证状态变为不可见。"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m 185,-429 l 527,-429 l 527,-695 l 185,-695 l 185,-429xe" onmouseover="UpdateTooltip(this,4,39)" onclick="OnShapeClick(4,39)" onfocus="UpdateTooltip(this,4,39);" onkeyup="OnShapeKey(4,39)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="拆分凭证" origTitle="拆分凭证"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -780,232 l -519,232 l -479,171 l -519,111 l -780,111 l -820,171 l -780,232xe" onmouseover="UpdateTooltip(this,4,42)" onclick="OnShapeClick(4,42)" onfocus="UpdateTooltip(this,4,42);" onkeyup="OnShapeKey(4,42)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="拆分条件：合并凭证，未生成凭证号（如果已生成凭证号表示已打印凭证要先提醒慎用）" origTitle="拆分条件：合并凭证，未生成凭证号（如果已生成凭证号表示已打印凭证要先提醒慎用）"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -996,980 l -795,980 l -795,352 l -996,352 l -996,980xe" onmouseover="UpdateTooltip(this,4,43)" onclick="OnShapeClick(4,43)" onfocus="UpdateTooltip(this,4,43);" onkeyup="OnShapeKey(4,43)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="拆分规则：合并前子凭证状态变为可见，序号变为遍历所有断号的序号从小到大设置新序号，如序号是连续的，找到最大往后生成" origTitle="拆分规则：合并前子凭证状态变为可见，序号变为遍历所有断号的序号从小到大设置新序号，如序号是连续的，找到最大往后生成"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -760,996 l -519,996 l -519,350 l -760,350 l -760,996xe" onmouseover="UpdateTooltip(this,4,44)" onclick="OnShapeClick(4,44)" onfocus="UpdateTooltip(this,4,44);" onkeyup="OnShapeKey(4,44)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="在凭证合并前有两个字段确定合并后新凭证与被合并凭证的关系SNO和SNOA，比如合并前三张凭证的SNOA分别为1,2,3，SNO也..." origTitle="在凭证合并前有两个字段确定合并后新凭证与被合并凭证的关系SNO和SNOA，比如合并前三张凭证的SNOA分别为1,2,3，SNO也..."  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m -246,972 l -76,972 l -76,352 l -87,352 l -87,346 l -484,346 l -484,352 l -495,352 l -495,972 l -325,972 l -325,972 l -246,972 l -246,972xe" onmouseover="UpdateTooltip(this,4,45)" onclick="OnShapeClick(4,45)" onfocus="UpdateTooltip(this,4,45);" onkeyup="OnShapeKey(4,45)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="断号排序" origTitle="断号排序"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m 203,171 l 446,171 l 487,111 l 446,50 l 203,50 l 162,111 l 203,171xe" onmouseover="UpdateTooltip(this,4,49)" onclick="OnShapeClick(4,49)" onfocus="UpdateTooltip(this,4,49);" onkeyup="OnShapeKey(4,49)"/> 
+
+<v:shape type="#VISSHAPE"   tabindex="1" title="遍历会计期间内所有凭证，一有断号，后面所有凭证序号-1" origTitle="遍历会计期间内所有凭证，一有断号，后面所有凭证序号-1"  style="top:-1000;left:-1000;width:1530;height:2000;position:absolute" path=" m 224,835 l 425,835 l 425,433 l 224,433 l 224,835xe" onmouseover="UpdateTooltip(this,4,50)" onclick="OnShapeClick(4,50)" onfocus="UpdateTooltip(this,4,50);" onkeyup="OnShapeKey(4,50)"/> 
+
+</v:group>
+
+
+
+</div>
+
+
+
+</body>
+</html>
+

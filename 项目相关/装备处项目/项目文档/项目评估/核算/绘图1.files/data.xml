@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisioDocument>
+	<DocumentProperties>
+		<Title></Title>
+		<HyperlinkBase href=""></HyperlinkBase>
+	</DocumentProperties>
+	<Pages>
+		<Page ID="0" Name="页-1" NameU="Page-1">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>连接线</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{DA216AF5-A86E-4A0D-AB4B-849D776F9A2C}" Name="准备" NameU="Preparation" Master="0">
+					<Text>系统级会计科目</Text>
+					<XForm>
+						<PinX Unit="MM">4.232283464566928</PinX>
+						<PinY Unit="MM">11.220472440944881</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="2" UniqueID="{65CBEE3A-3994-4ABE-86C5-4B945E291AF2}" Name="流程" NameU="Process" Master="2">
+					<Text>系统级管理员权限</Text>
+					<XForm>
+						<PinX Unit="MM">2.411417322834645</PinX>
+						<PinY Unit="MM">10.019685039370078</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{4E783EA6-9B94-4850-A823-E4CCD54D5E82}" Name="流程.3" NameU="Process.3" Master="2">
+					<Text>数据库读取科目体系和会计科目，无下载功能，只有增删改</Text>
+					<XForm>
+						<PinX Unit="MM">4.232283464566928</PinX>
+						<PinY Unit="MM">10.029527559055119</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="4" UniqueID="{CC871198-D4FA-46E2-A95D-7C123BBE3106}" Name="流程.4" NameU="Process.4" Master="2">
+					<Text>点击会计科目显示科目明细并可修改保存信息</Text>
+					<XForm>
+						<PinX Unit="MM">6.663385826771654</PinX>
+						<PinY Unit="MM">10.029527559055119</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="5" UniqueID="{617AC4E2-BC08-4F86-8A6B-FAA4A723FAAF}" Name="直线-曲线连接线" NameU="Line-curve connector" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.977362204724408</PinX>
+						<PinY Unit="MM">10.866141732283463</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="7" UniqueID="{2E6A7ECD-C5BC-4DA7-A0ED-FEDD989E9DF6}" Name="动态连接线" NameU="Dynamic connector" Master="4">
+					<XForm>
+						<PinX Unit="MM">4.232283464566928</PinX>
+						<PinY Unit="MM">10.728346456692915</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="6" UniqueID="{2778EE28-439D-434A-9D8B-3F3858E5218E}" Name="直线-曲线连接线.6" NameU="Line-curve connector.6" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.792322834645669</PinX>
+						<PinY Unit="MM">10.846456692913387</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="8" UniqueID="{0A772921-5244-4C83-8AA2-9FAB86E97749}" Name="准备.8" NameU="Preparation.8" Master="0">
+					<Text>系统级辅助项</Text>
+					<XForm>
+						<PinX Unit="MM">4.419291338582677</PinX>
+						<PinY Unit="MM">8.661417322834645</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="9" UniqueID="{0B7996D7-67A6-4B02-B019-5144C6A8A53F}" Name="流程.9" NameU="Process.9" Master="2">
+					<Text>系统级管理员权限</Text>
+					<XForm>
+						<PinX Unit="MM">2.076771653543307</PinX>
+						<PinY Unit="MM">7.342519685039369</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="10" UniqueID="{5D66A017-E58C-46B8-A20C-0DD3210FC17D}" Name="流程.10" NameU="Process.10" Master="2">
+					<Text>只有功能科目和经济科目为系统级，所有会计科目体系共用</Text>
+					<XForm>
+						<PinX Unit="MM">4.419291338582678</PinX>
+						<PinY Unit="MM">7.480314960629920</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="11" UniqueID="{401D18C1-561C-4864-983E-C5E8D58CC558}" Name="流程.11" NameU="Process.11" Master="2">
+					<Text>其他辅助项为单位级，各单位账套需自己配置</Text>
+					<XForm>
+						<PinX Unit="MM">6.663385826771653</PinX>
+						<PinY Unit="MM">7.480314960629920</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="12" UniqueID="{5EE872F6-FB85-4800-995F-BE052F97A37C}" Name="直线-曲线连接线.12" NameU="Line-curve connector.12" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.819881889763779</PinX>
+						<PinY Unit="MM">8.228346456692911</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="13" UniqueID="{16F4037B-88FE-4E99-A4DD-42C7837506A3}" Name="直线-曲线连接线.13" NameU="Line-curve connector.13" Master="3">
+					<XForm>
+						<PinX Unit="MM">4.419291338582678</PinX>
+						<PinY Unit="MM">8.144685039370078</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="14" UniqueID="{397EDB52-5952-46F7-934F-173815FAC065}" Name="直线-曲线连接线.14" NameU="Line-curve connector.14" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.969488188976378</PinX>
+						<PinY Unit="MM">8.292322834645669</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="15" UniqueID="{54D65546-7C60-4A44-A13B-03EA2D5BD601}" Name="准备.15" NameU="Preparation.15" Master="0">
+					<Text>编制凭证</Text>
+					<XForm>
+						<PinX Unit="MM">3.946850393700787</PinX>
+						<PinY Unit="MM">5.767716535433069</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="16" UniqueID="{DBFBF639-ABF8-4D5B-84FA-26D9F5CE6030}" Name="流程.16" NameU="Process.16" Master="2">
+					<Text>进入编制凭证界面，读取当前单位账套，年度，期间</Text>
+					<XForm>
+						<PinX Unit="MM">1.456692913385827</PinX>
+						<PinY Unit="MM">3.248031496062992</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="17" UniqueID="{44DBE9E4-0CB9-4B54-86E4-44EB2336CF1D}" Name="流程.17" NameU="Process.17" Master="2">
+					<Text>数据库关联账套ID，编制分录可以模糊匹配会计科目</Text>
+					<XForm>
+						<PinX Unit="MM">3.543307086614172</PinX>
+						<PinY Unit="MM">3.248031496062992</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="18" UniqueID="{25B0A736-5438-417C-8AC3-4D9925F4909E}" Name="流程.18" NameU="Process.18" Master="2">
+					<Text>辅助项明细关联辅助项类型，辅助项类型关联账套ID，会计科目下挂了辅助项位置，且位置为辅助项显示的先后顺序</Text>
+					<XForm>
+						<PinX Unit="MM">5.954724409448818</PinX>
+						<PinY Unit="MM">3.110236220472441</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="19" UniqueID="{A54EF189-C8BC-4EA0-B29F-4E6565F9FE6B}" Name="直线-曲线连接线.19" NameU="Line-curve connector.19" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.352362204724409</PinX>
+						<PinY Unit="MM">4.753937007874015</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="20" UniqueID="{A09E0F70-5251-4A3E-84C6-CC0EA4FE29F9}" Name="直线-曲线连接线.20" NameU="Line-curve connector.20" Master="3">
+					<XForm>
+						<PinX Unit="MM">3.745078740157480</PinX>
+						<PinY Unit="MM">4.429133858267717</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="21" UniqueID="{2145560D-9C14-4778-BBC0-4E213BF6C3B2}" Name="直线-曲线连接线.21" NameU="Line-curve connector.21" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.300196850393700</PinX>
+						<PinY Unit="MM">4.753937007874015</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="41" UniqueID="{30A63047-0B30-48B1-8C8E-3ACDE92840A2}" Name="Sheet.41" NameU="Sheet.41">
+					<XForm>
+						<PinX Unit="MM">-1.968503937007874</PinX>
+						<PinY Unit="MM">14.881889763779528</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="4" Name="页-2" NameU="Page-2">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>连接线</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="22" UniqueID="{6C40AD4A-7D5A-489E-86AB-76621346A788}" Name="准备.22" NameU="Preparation.22" Master="0">
+					<Text>合并凭证</Text>
+					<XForm>
+						<PinX Unit="MM">4.084645669291338</PinX>
+						<PinY Unit="MM">11.023622047244093</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="23" UniqueID="{A58CC69B-6E66-42B8-BE83-17508E28933F}" Name="流程.23" NameU="Process.23" Master="2">
+					<Text>勾选凭证，判定条件：无序号，已生成凭证号，分录错误的凭证不能合并</Text>
+					<XForm>
+						<PinX Unit="MM">2.066929133858269</PinX>
+						<PinY Unit="MM">9.242125984251967</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="24" UniqueID="{BB6BCF5E-8990-493C-B91F-7312030D80F5}" Name="流程.24" NameU="Process.24" Master="2">
+					<Text>无序号：编制凭证保存后自动生成</Text>
+					<XForm>
+						<PinX Unit="MM">0.713582677165355</PinX>
+						<PinY Unit="MM">7.480314960629921</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="25" UniqueID="{0264740B-E0AA-451A-B266-3451426117C6}" Name="流程.25" NameU="Process.25" Master="2">
+					<Text>凭证号生成：打印凭证后自动生成</Text>
+					<XForm>
+						<PinX Unit="MM">1.919291338582677</PinX>
+						<PinY Unit="MM">7.440944881889764</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="26" UniqueID="{044431F1-C514-4515-A844-95D81EEC89CB}" Name="流程.26" NameU="Process.26" Master="2">
+					<Text>分录错误：凭证明细借贷不平或为空</Text>
+					<XForm>
+						<PinX Unit="MM">2.952755905511811</PinX>
+						<PinY Unit="MM">7.440944881889764</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="27" UniqueID="{78D3383F-2131-4897-8657-2BD5EDA8A49E}" Name="直线-曲线连接线.27" NameU="Line-curve connector.27" Master="3">
+					<XForm>
+						<PinX Unit="MM">0.848917322834646</PinX>
+						<PinY Unit="MM">8.754921259842519</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="28" UniqueID="{D827923D-768B-4C27-82D9-94BA4FA6BC83}" Name="直线-曲线连接线.28" NameU="Line-curve connector.28" Master="3">
+					<XForm>
+						<PinX Unit="MM">1.993110236220473</PinX>
+						<PinY Unit="MM">8.503937007874015</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="29" UniqueID="{54A8F2E3-C8B7-45C8-A20B-8644F8DA568D}" Name="直线-曲线连接线.29" NameU="Line-curve connector.29" Master="3">
+					<XForm>
+						<PinX Unit="MM">3.051181102362206</PinX>
+						<PinY Unit="MM">8.754921259842519</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="30" UniqueID="{8D44C741-5142-4E96-88B1-678E90E2B6F4}" Name="流程.30" NameU="Process.30" Master="2">
+					<Text>合并方式：借方合并，贷方合并，全部合并</Text>
+					<XForm>
+						<PinX Unit="MM">4.355314960629922</PinX>
+						<PinY Unit="MM">9.242125984251967</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="31" UniqueID="{83B302F8-1FB4-44EA-AA62-D7116AECDB23}" Name="流程.31" NameU="Process.31" Master="2">
+					<Text>借方合并：借方合并为一条，贷方为合并凭证贷方所有</Text>
+					<XForm>
+						<PinX Unit="MM">4.291338582677166</PinX>
+						<PinY Unit="MM">7.539370078740157</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="32" UniqueID="{3C63BBC2-97E7-4775-AA89-648368DF6B49}" Name="流程.32" NameU="Process.32" Master="2">
+					<Text>贷方合并：借方为合并凭证借方所有，贷方为一条总和</Text>
+					<XForm>
+						<PinX Unit="MM">5.669291338582677</PinX>
+						<PinY Unit="MM">7.578740157480314</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="33" UniqueID="{A29254DC-3D09-4B7F-A7DF-282B7F5BA0D7}" Name="流程.33" NameU="Process.33" Master="2">
+					<Text>全部合并：借贷各一条总和</Text>
+					<XForm>
+						<PinX Unit="MM">6.877460629921258</PinX>
+						<PinY Unit="MM">7.480314960629920</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="34" UniqueID="{6990721C-2FE2-49E2-B1C0-0BC160D56E98}" Name="直线-曲线连接线.34" NameU="Line-curve connector.34" Master="3">
+					<XForm>
+						<PinX Unit="MM">3.941929133858269</PinX>
+						<PinY Unit="MM">8.715551181102361</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="35" UniqueID="{9A5C48F5-7B0C-4ACA-8BA8-6885032A43DB}" Name="直线-曲线连接线.35" NameU="Line-curve connector.35" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.012303149606300</PinX>
+						<PinY Unit="MM">8.503937007874015</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="36" UniqueID="{A4D48C07-FDA8-42F7-A6EF-41AF30C7629B}" Name="直线-曲线连接线.36" NameU="Line-curve connector.36" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.997785433070865</PinX>
+						<PinY Unit="MM">8.656496062992126</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="37" UniqueID="{8B22B121-9E09-4645-B3A4-D55699FD89BA}" Name="直线-曲线连接线.37" NameU="Line-curve connector.37" Master="3">
+					<XForm>
+						<PinX Unit="MM">2.657480314960630</PinX>
+						<PinY Unit="MM">10.383858267716533</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="38" UniqueID="{44B04A99-0000-44C5-A984-B4862D16DD93}" Name="直线-曲线连接线.38" NameU="Line-curve connector.38" Master="3">
+					<XForm>
+						<PinX Unit="MM">4.219980314960630</PinX>
+						<PinY Unit="MM">10.236220472440941</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="39" UniqueID="{5672372B-B58A-4337-B2F9-63CA70C1383F}" Name="流程.39" NameU="Process.39" Master="2">
+					<Text>合并规则：勾选的凭证序号取最最小断号生成新凭证，被合并凭证状态变为不可见。</Text>
+					<XForm>
+						<PinX Unit="MM">6.840551181102361</PinX>
+						<PinY Unit="MM">9.192913385826772</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="40" UniqueID="{0614996F-AD4B-45F9-892F-0CAF58A15731}" Name="直线-曲线连接线.40" NameU="Line-curve connector.40" Master="3">
+					<XForm>
+						<PinX Unit="MM">5.880905511811023</PinX>
+						<PinY Unit="MM">10.433070866141732</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="41" UniqueID="{346A0CE0-5BFA-4AA0-956C-85A4FD977D74}" Name="Sheet.41" NameU="Sheet.41">
+					<XForm>
+						<PinX Unit="MM">-8.070866141732283</PinX>
+						<PinY Unit="MM">14.173228346456693</PinY>
+					</XForm>
+				</Shape>
+				<Shape ID="42" UniqueID="{08DA6B24-4552-48C7-BC5A-12A909786684}" Name="准备.42" NameU="Preparation.42" Master="0">
+					<Text>拆分凭证</Text>
+					<XForm>
+						<PinX Unit="MM">1.919291338582677</PinX>
+						<PinY Unit="MM">5.610236220472440</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="43" UniqueID="{B0DB926D-B856-44B1-9E76-9E2F61C9CEDD}" Name="流程.43" NameU="Process.43" Master="2">
+					<Text>拆分条件：合并凭证，未生成凭证号（如果已生成凭证号表示已打印凭证要先提醒慎用）</Text>
+					<XForm>
+						<PinX Unit="MM">0.713582677165355</PinX>
+						<PinY Unit="MM">3.188976377952757</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="44" UniqueID="{DE97171D-30D6-4C8C-ADAA-4F706D562013}" Name="流程.44" NameU="Process.44" Master="2">
+					<Text>拆分规则：合并前子凭证状态变为可见，序号变为遍历所有断号的序号从小到大设置新序号，如序号是连续的，找到最大往后生成</Text>
+					<XForm>
+						<PinX Unit="MM">1.968503937007874</PinX>
+						<PinY Unit="MM">3.154527559055120</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="45" UniqueID="{1A4CD02F-1AA0-4E49-927E-4A4BDAC1936E}" Name="流程.45" NameU="Process.45" Master="2">
+					<Text>在凭证合并前有两个字段确定合并后新凭证与被合并凭证的关系SNO和SNOA，比如合并前三张凭证的SNOA分别为1,2,3，SNO也分别为1,2,3。合并后的新凭证的SNO为1,2,3.SNOA为4.这时候拆分凭证就会去找SNOA为1和为2和为3的三张凭证状态变为可见并删除这张合并凭证</Text>
+					<XForm>
+						<PinX Unit="MM">3.700787401574802</PinX>
+						<PinY Unit="MM">3.208661417322835</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="46" UniqueID="{F77496E6-8C93-4F38-ACC0-BE95B9279A1C}" Name="直线-曲线连接线.46" NameU="Line-curve connector.46" Master="3">
+					<XForm>
+						<PinX Unit="MM">0.898129921259843</PinX>
+						<PinY Unit="MM">5.167322834645670</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="47" UniqueID="{646D1475-A17A-47D2-9145-EB1DC5581F43}" Name="直线-曲线连接线.47" NameU="Line-curve connector.47" Master="3">
+					<XForm>
+						<PinX Unit="MM">1.943897637795276</PinX>
+						<PinY Unit="MM">5.024606299212600</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="48" UniqueID="{C0FAE8F5-6161-4D23-8399-DCA364484469}" Name="直线-曲线连接线.48" NameU="Line-curve connector.48" Master="3">
+					<XForm>
+						<PinX Unit="MM">3.228346456692913</PinX>
+						<PinY Unit="MM">5.167322834645669</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="49" UniqueID="{FB3BC582-E766-452C-90EC-C32B1D7F1259}" Name="准备.49" NameU="Preparation.49" Master="0">
+					<Text>断号排序</Text>
+					<XForm>
+						<PinX Unit="MM">6.686761811023620</PinX>
+						<PinY Unit="MM">5.905511811023620</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="50" UniqueID="{CA889EF5-8F9B-421B-9348-828D34C49C09}" Name="流程.50" NameU="Process.50" Master="2">
+					<Text>遍历会计期间内所有凭证，一有断号，后面所有凭证序号-1</Text>
+					<XForm>
+						<PinX Unit="MM">6.686761811023620</PinX>
+						<PinY Unit="MM">3.346456692913386</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="51" UniqueID="{574DB555-8358-4C34-8D7D-8CE0925BA86A}" Name="直线-曲线连接线.51" NameU="Line-curve connector.51" Master="3">
+					<XForm>
+						<PinX Unit="MM">6.686761811023620</PinX>
+						<PinY Unit="MM">4.970472440944882</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="52" UniqueID="{29DB1168-5E0D-4A3E-AD3F-FC892DA270DF}" Name="Sheet.52" NameU="Sheet.52">
+					<XForm>
+						<PinX Unit="MM">1.574803149606299</PinX>
+						<PinY Unit="MM">12.007874015748030</PinY>
+					</XForm>
+				</Shape>
+			</Shapes>
+		</Page>
+		<Page ID="5" Name="页-3" NameU="Page-3">
+			<Layer IX="0">
+				<Name>流程图</Name>
+				<NameUniv>Flowchart</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Layer IX="1">
+				<Name>连接线</Name>
+				<NameUniv>Connector</NameUniv>
+				<Visible>1</Visible>
+			</Layer>
+			<Shapes>
+				<Shape ID="1" UniqueID="{E5C9FA95-E498-4020-9E34-12586885C61E}" Name="准备" NameU="Preparation" Master="0">
+					<Text>年度结账</Text>
+					<XForm>
+						<PinX Unit="MM">3.887795275590551</PinX>
+						<PinY Unit="MM">10.925196850393700</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="2" UniqueID="{1E10C755-8BD4-4C56-A7FB-07C42BC1EBED}" Name="流程" NameU="Process" Master="2">
+					<Text>在执行年度数据结转前应完成以下基础准备工作：
+1、确保所有数据已经录入完毕； 
+2、所有凭证都已正确记账； 
+3、年终结转正确完成；12月结帐； 
+4、财务报表已经正确生成； 
+5、本年度数据备份完成；</Text>
+					<XForm>
+						<PinX Unit="MM">2.559055118110236</PinX>
+						<PinY Unit="MM">8.366141732283463</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="3" UniqueID="{E14237C4-37D4-42FE-ABEC-57E7226D6DC9}" Name="流程.3" NameU="Process.3" Master="2">
+					<Text>凭证会计科目本年余额（本年余额=上年结转+本年发生）；在下一会计年度新建会计帐簿的第一余额栏内填写上年结转的余额，并在摘要栏注明“上年结转”字样</Text>
+					<XForm>
+						<PinX Unit="MM">5.659448818897637</PinX>
+						<PinY Unit="MM">8.366141732283461</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>0</LayerMember>
+					</LayerMem>
+					<Prop ID="1" Name="Cost" NameU="Cost">
+						<Value></Value>
+						<Label>成本</Label>
+					</Prop>
+					<Prop ID="2" Name="Duration" NameU="Duration">
+						<Value></Value>
+						<Label>持续时间</Label>
+					</Prop>
+					<Prop ID="3" Name="Resources" NameU="Resources">
+						<Value></Value>
+						<Label>资源</Label>
+					</Prop>
+				</Shape>
+				<Shape ID="4" UniqueID="{1ADAE46D-31E4-4CE7-94B6-95FB84EC0667}" Name="直线-曲线连接线" NameU="Line-curve connector" Master="3">
+					<XForm>
+						<PinX Unit="MM">3.051181102362205</PinX>
+						<PinY Unit="MM">10.137795275590550</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+				<Shape ID="5" UniqueID="{97877259-57B6-4932-9B8E-671A8F1454DD}" Name="直线-曲线连接线.5" NameU="Line-curve connector.5" Master="3">
+					<XForm>
+						<PinX Unit="MM">4.995078740157480</PinX>
+						<PinY Unit="MM">10.137795275590548</PinY>
+					</XForm>
+					<LayerMem>
+						<LayerMember>1</LayerMember>
+					</LayerMem>
+				</Shape>
+			</Shapes>
+		</Page>
+	</Pages>
+</VisioDocument>

@@ -1,0 +1,145 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+绘图1
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 4;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.219790;
+	viewMgr.visBBoxRight = 7.678832;
+	viewMgr.visBBoxBottom = 1.573136;
+	viewMgr.visBBoxTop = 11.320564;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_2.gif" ALT="页-2" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="遍历会计期间内所有凭证，一有断号，后面所有凭证序号-1" origTitle="遍历会计期间内所有凭证，一有断号，后面所有凭证序号-1" TITLE="遍历会计期间内所有凭证，一有断号，后面所有凭证序号-1"  target="_top" COORDS="368,551,428,551,428,430,368,430,368,551" onmouseover="UpdateTooltip(this,4,50)" onfocus="UpdateTooltip(this,4,50)" onclick="return OnShapeClick(4,50);" onkeyup="OnShapeKey(4,50);">
+  <AREA shape="POLYGON" tabindex="1" ALT="断号排序" origTitle="断号排序" TITLE="断号排序"  target="_top" COORDS="361,351,435,351,447,333,435,315,361,315,349,333,361,351" onmouseover="UpdateTooltip(this,4,49)" onfocus="UpdateTooltip(this,4,49)" onclick="return OnShapeClick(4,49);" onkeyup="OnShapeKey(4,49);">
+  <AREA shape="POLYGON" tabindex="1" ALT="在凭证合并前有两个字段确定合并后新凭证与被合并凭证的关系SNO和SNOA，比如合并前三张凭证的SNOA分别为1,2,3，SNO也..." origTitle="在凭证合并前有两个字段确定合并后新凭证与被合并凭证的关系SNO和SNOA，比如合并前三张凭证的SNOA分别为1,2,3，SNO也..." TITLE="在凭证合并前有两个字段确定合并后新凭证与被合并凭证的关系SNO和SNOA，比如合并前三张凭证的SNOA分别为1,2,3，SNO也..."  target="_top" COORDS="226,593,277,593,277,406,274,406,274,404,154,404,154,406,151,406,151,593,202,593,202,593,226,593,226,593" onmouseover="UpdateTooltip(this,4,45)" onfocus="UpdateTooltip(this,4,45)" onclick="return OnShapeClick(4,45);" onkeyup="OnShapeKey(4,45);">
+  <AREA shape="POLYGON" tabindex="1" ALT="拆分规则：合并前子凭证状态变为可见，序号变为遍历所有断号的序号从小到大设置新序号，如序号是连续的，找到最大往后生成" origTitle="拆分规则：合并前子凭证状态变为可见，序号变为遍历所有断号的序号从小到大设置新序号，如序号是连续的，找到最大往后生成" TITLE="拆分规则：合并前子凭证状态变为可见，序号变为遍历所有断号的序号从小到大设置新序号，如序号是连续的，找到最大往后生成"  target="_top" COORDS="71,600,144,600,144,405,71,405,71,600" onmouseover="UpdateTooltip(this,4,44)" onfocus="UpdateTooltip(this,4,44)" onclick="return OnShapeClick(4,44);" onkeyup="OnShapeKey(4,44);">
+  <AREA shape="POLYGON" tabindex="1" ALT="拆分条件：合并凭证，未生成凭证号（如果已生成凭证号表示已打印凭证要先提醒慎用）" origTitle="拆分条件：合并凭证，未生成凭证号（如果已生成凭证号表示已打印凭证要先提醒慎用）" TITLE="拆分条件：合并凭证，未生成凭证号（如果已生成凭证号表示已打印凭证要先提醒慎用）"  target="_top" COORDS="0,595,61,595,61,406,0,406,0,595" onmouseover="UpdateTooltip(this,4,43)" onfocus="UpdateTooltip(this,4,43)" onclick="return OnShapeClick(4,43);" onkeyup="OnShapeKey(4,43);">
+  <AREA shape="POLYGON" tabindex="1" ALT="拆分凭证" origTitle="拆分凭证" TITLE="拆分凭证"  target="_top" COORDS="65,370,144,370,156,351,144,333,65,333,53,351,65,370" onmouseover="UpdateTooltip(this,4,42)" onfocus="UpdateTooltip(this,4,42)" onclick="return OnShapeClick(4,42);" onkeyup="OnShapeKey(4,42);">
+  <AREA shape="POLYGON" tabindex="1" ALT="合并规则：勾选的凭证序号取最最小断号生成新凭证，被合并凭证状态变为不可见。" origTitle="合并规则：勾选的凭证序号取最最小断号生成新凭证，被合并凭证状态变为不可见。" TITLE="合并规则：勾选的凭证序号取最最小断号生成新凭证，被合并凭证状态变为不可见。"  target="_top" COORDS="356,171,459,171,459,91,356,91,356,171" onmouseover="UpdateTooltip(this,4,39)" onfocus="UpdateTooltip(this,4,39)" onclick="return OnShapeClick(4,39);" onkeyup="OnShapeKey(4,39);">
+  <AREA shape="POLYGON" tabindex="1" ALT="全部合并：借贷各一条总和" origTitle="全部合并：借贷各一条总和" TITLE="全部合并：借贷各一条总和"  target="_top" COORDS="380,273,440,273,440,200,380,200,380,273" onmouseover="UpdateTooltip(this,4,33)" onfocus="UpdateTooltip(this,4,33)" onclick="return OnShapeClick(4,33);" onkeyup="OnShapeKey(4,33);">
+  <AREA shape="POLYGON" tabindex="1" ALT="贷方合并：借方为合并凭证借方所有，贷方为一条总和" origTitle="贷方合并：借方为合并凭证借方所有，贷方为一条总和" TITLE="贷方合并：借方为合并凭证借方所有，贷方为一条总和"  target="_top" COORDS="301,273,369,273,369,188,301,188,301,273" onmouseover="UpdateTooltip(this,4,32)" onfocus="UpdateTooltip(this,4,32)" onclick="return OnShapeClick(4,32);" onkeyup="OnShapeKey(4,32);">
+  <AREA shape="POLYGON" tabindex="1" ALT="借方合并：借方合并为一条，贷方为合并凭证贷方所有" origTitle="借方合并：借方合并为一条，贷方为合并凭证贷方所有" TITLE="借方合并：借方合并为一条，贷方为合并凭证贷方所有"  target="_top" COORDS="217,273,284,273,284,193,217,193,217,273" onmouseover="UpdateTooltip(this,4,31)" onfocus="UpdateTooltip(this,4,31)" onclick="return OnShapeClick(4,31);" onkeyup="OnShapeKey(4,31);">
+  <AREA shape="POLYGON" tabindex="1" ALT="合并方式：借方合并，贷方合并，全部合并" origTitle="合并方式：借方合并，贷方合并，全部合并" TITLE="合并方式：借方合并，贷方合并，全部合并"  target="_top" COORDS="208,159,301,159,301,97,208,97,208,159" onmouseover="UpdateTooltip(this,4,30)" onfocus="UpdateTooltip(this,4,30)" onclick="return OnShapeClick(4,30);" onkeyup="OnShapeKey(4,30);">
+  <AREA shape="POLYGON" tabindex="1" ALT="分录错误：凭证明细借贷不平或为空" origTitle="分录错误：凭证明细借贷不平或为空" TITLE="分录错误：凭证明细借贷不平或为空"  target="_top" COORDS="138,290,198,290,198,188,138,188,138,290" onmouseover="UpdateTooltip(this,4,26)" onfocus="UpdateTooltip(this,4,26)" onclick="return OnShapeClick(4,26);" onkeyup="OnShapeKey(4,26);">
+  <AREA shape="POLYGON" tabindex="1" ALT="凭证号生成：打印凭证后自动生成" origTitle="凭证号生成：打印凭证后自动生成" TITLE="凭证号生成：打印凭证后自动生成"  target="_top" COORDS="74,290,135,290,135,188,74,188,74,290" onmouseover="UpdateTooltip(this,4,25)" onfocus="UpdateTooltip(this,4,25)" onclick="return OnShapeClick(4,25);" onkeyup="OnShapeKey(4,25);">
+  <AREA shape="POLYGON" tabindex="1" ALT="无序号：编制凭证保存后自动生成" origTitle="无序号：编制凭证保存后自动生成" TITLE="无序号：编制凭证保存后自动生成"  target="_top" COORDS="0,285,61,285,61,188,0,188,0,285" onmouseover="UpdateTooltip(this,4,24)" onfocus="UpdateTooltip(this,4,24)" onclick="return OnShapeClick(4,24);" onkeyup="OnShapeKey(4,24);">
+  <AREA shape="POLYGON" tabindex="1" ALT="勾选凭证，判定条件：无序号，已生成凭证号，分录错误的凭证不能合并" origTitle="勾选凭证，判定条件：无序号，已生成凭证号，分录错误的凭证不能合并" TITLE="勾选凭证，判定条件：无序号，已生成凭证号，分录错误的凭证不能合并"  target="_top" COORDS="47,159,180,159,180,97,47,97,47,159" onmouseover="UpdateTooltip(this,4,23)" onfocus="UpdateTooltip(this,4,23)" onclick="return OnShapeClick(4,23);" onkeyup="OnShapeKey(4,23);">
+  <AREA shape="POLYGON" tabindex="1" ALT="合并凭证" origTitle="合并凭证" TITLE="合并凭证"  target="_top" COORDS="198,36,277,36,289,18,277,0,198,0,186,18,198,36" onmouseover="UpdateTooltip(this,4,22)" onfocus="UpdateTooltip(this,4,22)" onclick="return OnShapeClick(4,22);" onkeyup="OnShapeKey(4,22);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

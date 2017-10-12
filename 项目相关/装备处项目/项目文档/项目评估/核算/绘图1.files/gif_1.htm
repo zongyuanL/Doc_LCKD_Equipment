@@ -1,0 +1,141 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="visio.css"/>
+<title>
+绘图1
+</title>
+<script type="text/javascript" language="javascript">
+function UpdateTooltip(){};
+function OnShapeClick(){};
+</script>
+
+<script src="gif_1.js" type="text/jscript" language="jscript"></script>
+
+<script type="text/jscript" language="jscript">
+	if(parent.isUpLevel)
+	{
+		location.replace(parent.g_FileList[parent.g_CurPageIndex].PriImage);
+	}
+</script>
+
+
+
+<script type="text/jscript" language="jscript">
+
+var pageID = 0;
+
+var isUpLevel = parent.isUpLevel;
+var OnShapeClick = null;
+if (!parent.isMac)
+{
+	OnShapeClick = parent.OnShapeClick;
+}
+
+var OnShapeKey = parent.OnShapeKey;
+var UpdateTooltip = parent.UpdateTooltip;
+var clickMenu = parent.clickMenu;
+var toggleMenuDiv = parent.toggleMenuDiv;
+var toggleMenuLink = parent.toggleMenuLink;
+var GoToPage = parent.GoToPage;
+
+
+if (parent.isUpLevel)
+{
+
+	if (parent.g_FirstPageToLoad != null && parent.g_FirstPageToLoad.length > 0)
+	{
+		if (parent.g_FileList[parent.g_CurPageIndex].PageID != pageID)
+		{
+			var fileEntry = parent.g_FileList[parent.g_CurPageIndex];
+			var fileToLoad = fileToLoad = fileEntry.PriImage;
+			if (fileEntry.SecImage.length > 0)
+			{
+				fileToLoad = fileEntry.SecImage;
+			}
+
+			location.replace(fileToLoad);
+		}
+
+		parent.g_FirstPageToLoad = null;
+	}
+
+
+	var viewMgr = new parent.CViewMgr();
+	parent.viewMgr = viewMgr;
+
+	viewMgr.SupportsDetails = true;
+	viewMgr.SupportsSearch = true;
+
+	viewMgr.put_Location = ViewMgrSetRasterLocation;
+	viewMgr.visBBoxLeft = 0.746365;
+	viewMgr.visBBoxRight = 7.649304;
+	viewMgr.visBBoxBottom = 2.478648;
+	viewMgr.visBBoxTop = 11.517415;
+	viewMgr.highlightDiv = null;
+}
+
+function load ()
+{
+	if(isUpLevel)
+	{
+		arrowdiv.innerHTML = '<img id="arrowgif" alt="显示所选形状的位置" src="arrow.gif"/>';
+
+		var pageIndex = parent.PageIndexFromID (pageID);
+		parent.CurPageUpdate (pageIndex);
+	}
+}
+
+function unload()
+{
+	if(isUpLevel)
+	{
+		viewMgr = null;
+		parent.viewMgr = null;
+	}
+}
+
+window.onload = load;
+window.onunload = unload;
+document.onclick = clickMenu;
+
+</script>
+</head>
+
+<body class="pageView" bgcolor="#FFFFFF">
+
+<div id=arrowdiv style="position:absolute;top:0;left:0;visibility:hidden;z-index:5">
+</div>
+
+<div id="menu1" onclick="clickMenu()" class="hlMenu">
+</div>
+
+<DIV id=RasterDiv>
+
+
+<center>
+  <IMG id="ConvertedImage" SRC="gif_1.gif" ALT="页-1" name=RasterImage BORDER="0" USEMAP="#visImageMap">
+</center>
+
+<MAP NAME="visImageMap">
+  <AREA shape="POLYGON" tabindex="1" ALT="辅助项明细关联辅助项类型，辅助项类型关联账套ID，会计科目下挂了辅助项位置，且位置为辅助项显示的先后顺序" origTitle="辅助项明细关联辅助项类型，辅助项类型关联账套ID，会计科目下挂了辅助项位置，且位置为辅助项显示的先后顺序" TITLE="辅助项明细关联辅助项类型，辅助项类型关联账套ID，会计科目下挂了辅助项位置，且位置为辅助项显示的先后顺序"  target="_top" COORDS="270,600,421,600,421,516,270,516,270,600" onmouseover="UpdateTooltip(this,0,18)" onfocus="UpdateTooltip(this,0,18)" onclick="return OnShapeClick(0,18);" onkeyup="OnShapeKey(0,18);">
+  <AREA shape="POLYGON" tabindex="1" ALT="数据库关联账套ID，编制分录可以模糊匹配会计科目" origTitle="数据库关联账套ID，编制分录可以模糊匹配会计科目" TITLE="数据库关联账套ID，编制分录可以模糊匹配会计科目"  target="_top" COORDS="140,516,133,516,133,582,238,582,238,516,231,516,231,516,140,516,140,516" onmouseover="UpdateTooltip(this,0,17)" onfocus="UpdateTooltip(this,0,17)" onclick="return OnShapeClick(0,17);" onkeyup="OnShapeKey(0,17);">
+  <AREA shape="POLYGON" tabindex="1" ALT="进入编制凭证界面，读取当前单位账套，年度，期间" origTitle="进入编制凭证界面，读取当前单位账套，年度，期间" TITLE="进入编制凭证界面，读取当前单位账套，年度，期间"  target="_top" COORDS="2,516,0,516,0,582,94,582,94,516,92,516,92,516,2,516,2,516" onmouseover="UpdateTooltip(this,0,16)" onfocus="UpdateTooltip(this,0,16)" onclick="return OnShapeClick(0,16);" onkeyup="OnShapeKey(0,16);">
+  <AREA shape="POLYGON" tabindex="1" ALT="编制凭证" origTitle="编制凭证" TITLE="编制凭证"  target="_top" COORDS="179,425,246,425,259,382,246,339,179,339,166,382,179,425" onmouseover="UpdateTooltip(this,0,15)" onfocus="UpdateTooltip(this,0,15)" onclick="return OnShapeClick(0,15);" onkeyup="OnShapeKey(0,15);">
+  <AREA shape="POLYGON" tabindex="1" ALT="其他辅助项为单位级，各单位账套需自己配置" origTitle="其他辅助项为单位级，各单位账套需自己配置" TITLE="其他辅助项为单位级，各单位账套需自己配置"  target="_top" COORDS="338,297,447,297,447,239,338,239,338,297" onmouseover="UpdateTooltip(this,0,11)" onfocus="UpdateTooltip(this,0,11)" onclick="return OnShapeClick(0,11);" onkeyup="OnShapeKey(0,11);">
+  <AREA shape="POLYGON" tabindex="1" ALT="只有功能科目和经济科目为系统级，所有会计科目体系共用" origTitle="只有功能科目和经济科目为系统级，所有会计科目体系共用" TITLE="只有功能科目和经济科目为系统级，所有会计科目体系共用"  target="_top" COORDS="182,297,305,297,305,239,182,239,182,297" onmouseover="UpdateTooltip(this,0,10)" onfocus="UpdateTooltip(this,0,10)" onclick="return OnShapeClick(0,10);" onkeyup="OnShapeKey(0,10);">
+  <AREA shape="POLYGON" tabindex="1" ALT="系统级管理员权限" origTitle="系统级管理员权限" TITLE="系统级管理员权限"  target="_top" COORDS="43,307,133,307,133,247,43,247,43,307" onmouseover="UpdateTooltip(this,0,9)" onfocus="UpdateTooltip(this,0,9)" onclick="return OnShapeClick(0,9);" onkeyup="OnShapeKey(0,9);">
+  <AREA shape="POLYGON" tabindex="1" ALT="系统级辅助项" origTitle="系统级辅助项" TITLE="系统级辅助项"  target="_top" COORDS="200,209,287,209,301,190,287,170,200,170,187,190,200,209" onmouseover="UpdateTooltip(this,0,8)" onfocus="UpdateTooltip(this,0,8)" onclick="return OnShapeClick(0,8);" onkeyup="OnShapeKey(0,8);">
+  <AREA shape="POLYGON" tabindex="1" ALT="点击会计科目显示科目明细并可修改保存信息" origTitle="点击会计科目显示科目明细并可修改保存信息" TITLE="点击会计科目显示科目明细并可修改保存信息"  target="_top" COORDS="327,128,458,128,458,69,327,69,327,128" onmouseover="UpdateTooltip(this,0,4)" onfocus="UpdateTooltip(this,0,4)" onclick="return OnShapeClick(0,4);" onkeyup="OnShapeKey(0,4);">
+  <AREA shape="POLYGON" tabindex="1" ALT="数据库读取科目体系和会计科目，无下载功能，只有增删改" origTitle="数据库读取科目体系和会计科目，无下载功能，只有增删改" TITLE="数据库读取科目体系和会计科目，无下载功能，只有增删改"  target="_top" COORDS="179,132,284,132,284,65,179,65,179,132" onmouseover="UpdateTooltip(this,0,3)" onfocus="UpdateTooltip(this,0,3)" onclick="return OnShapeClick(0,3);" onkeyup="OnShapeKey(0,3);">
+  <AREA shape="POLYGON" tabindex="1" ALT="系统级管理员权限" origTitle="系统级管理员权限" TITLE="系统级管理员权限"  target="_top" COORDS="75,132,146,132,146,67,75,67,75,132" onmouseover="UpdateTooltip(this,0,2)" onfocus="UpdateTooltip(this,0,2)" onclick="return OnShapeClick(0,2);" onkeyup="OnShapeKey(0,2);">
+  <AREA shape="POLYGON" tabindex="1" ALT="系统级会计科目" origTitle="系统级会计科目" TITLE="系统级会计科目"  target="_top" COORDS="199,39,264,39,277,20,264,0,199,0,186,20,199,39" onmouseover="UpdateTooltip(this,0,1)" onfocus="UpdateTooltip(this,0,1)" onclick="return OnShapeClick(0,1);" onkeyup="OnShapeKey(0,1);">
+</MAP>
+
+
+
+</DIV>
+
+</body>
+</html>
+

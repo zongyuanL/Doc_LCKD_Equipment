@@ -1,0 +1,10 @@
+商户号：301310070118581
+终端号：33124015（使用收银机编号时不需要配置）
+收银机编号：01102
+
+<isCommsEncrypt>1</isCommsEncrypt>
+<hostIp>116.228.234.35</hostIp>
+<hostPort>8203</hostPort>
+<isDownKeyEncrypt>1</isDownKeyEncrypt>
+<downKeyIp>61.129.71.106</downKeyIp>
+<downKeyPort>20065</downKeyPort>

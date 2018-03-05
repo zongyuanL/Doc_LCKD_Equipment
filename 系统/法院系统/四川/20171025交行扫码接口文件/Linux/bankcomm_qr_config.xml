@@ -1,0 +1,14 @@
+<bankcomm_qr_config>
+	<!--<merchantNo>301310070118581</merchantNo>-->
+	<merchantNo>301310053113940</merchantNo>
+	<isCommsEncrypt>1</isCommsEncrypt>
+	<hostIp>116.228.234.35</hostIp>
+	<hostPort>8203</hostPort>
+	<isDownKeyEncrypt>1</isDownKeyEncrypt>
+	<downKeyIp>61.129.71.106</downKeyIp>
+	<downKeyPort>20065</downKeyPort>
+	<timeout>45</timeout>
+	<tpdu>6000070000</tpdu>
+	<dataPath>./BankComm</dataPath>
+	<logPath>./BankComm/log/</logPath>
+</bankcomm_qr_config>
